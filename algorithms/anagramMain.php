@@ -16,5 +16,5 @@ include('./utility/anagram.php');
 $str1 = readline("enter a string1:");
 $str2 = readline("enter a string2:");
 //checking whether the given strings are anagram or not
-if (anagram($str1, $str2))  echo $str1, " and ", $str2, " are anagrams";
+if (isAnagram($str1, $str2))  echo $str1, " and ", $str2, " are anagrams";
 else echo $str1, " and ", $str2, " not are anagrams";
