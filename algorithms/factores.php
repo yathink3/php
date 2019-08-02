@@ -7,7 +7,7 @@
  * @overview:  Factors of a number
  * @author : yathin k <yathink3@gmail.com>
  * @version : 1.0
- * @since : 01-july-2019
+ * @since : 01-aug-2019
  *******************************************************************************************************************/
 //basic program
 $n=readline("enter a number:");

@@ -7,7 +7,7 @@
  * @overview:  primes anagram range of a number
  * @author : yathin k <yathink3@gmail.com>
  * @version : 1.0
- * @since : 02-july-2019
+ * @since : 02-aug-2019
  *******************************************************************************************************************/
 
 //including primes

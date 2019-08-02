@@ -8,7 +8,7 @@
  * @overview:  Binary Search the Word from Word List
  * @author : yathin k <yathink3@gmail.com>
  * @version : 1.0
- * @since : 02-july-2019
+ * @since : 02-aug-2019
  *******************************************************************************************************************/
 
 //including binary search file
@@ -20,5 +20,3 @@ sort($arr);
 $key = readline('enter the key value:');
 //binarysearch applaying
 echo binarySearch($key, $arr);
-
-?>
