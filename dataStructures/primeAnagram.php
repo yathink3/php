@@ -1,7 +1,7 @@
 <?php
 
 /********************************************************************************************************************
- * @Execution : default node : cmd> primeAnagram.js
+ * @Execution : default node : cmd> primeAnagram.php
  * @Purpose : to study the data structures
  * @description :Extend the Prime Number Program and store only the numbers in that range that are Anagrams.
                 For e.g. 17 and 71 are both Prime and Anagrams in the 0 to 100 range. 
@@ -9,7 +9,7 @@
  * @overview : prime anagrams arrays
  * @author : yathin k <yathink3@gmail.com>
  * @version : 1.0
- * @since : 24-july-2019
+ * @since : 02-aug-2019
  *******************************************************************************************************************/
 
 
