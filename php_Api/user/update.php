@@ -1,4 +1,16 @@
 <?php
+
+/********************************************************************************************************************
+ * @Execution : default node : cmd> update.php
+ * @Purpose : to study apllication programing interface
+ * @description: Create an Rest Api in Php
+ * @overview:api for update
+ * @author : yathin k <yathink3@gmail.com>
+ * @version : 1.0
+ * @since : 19-aug-2019
+ *******************************************************************************************************************/
+
+
 // required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");

@@ -1,4 +1,16 @@
 <?php
+
+/********************************************************************************************************************
+ * @Execution : default node : cmd> login.php
+ * @Purpose : to study apllication programing interface in php
+ * @description: Create an Rest Api in Php for login
+ * @overview:api for login
+ * @author : yathin k <yathink3@gmail.com>
+ * @version : 1.0
+ * @since : 19-aug-2019
+ *******************************************************************************************************************/
+
+
 // required headers
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: access");
@@ -14,10 +26,11 @@ include_once '../objects/user.php';
 $database = new Database();
 $db = $database->getConnection();
  
-// prepare product object
+// prepare user object
 $user = new User($db);
 $userRef=new User($db);
-// get id of user to be edited
+
+// get email of user to be edited
 $data = json_decode(file_get_contents("php://input"));
 $userRef->email=$data->email;
 $user->password=$data->password;

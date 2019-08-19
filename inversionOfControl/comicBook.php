@@ -1,10 +1,26 @@
 <?php
 
+/********************************************************************************************************************
+ * @Execution : default node : cmd> comicBook.php
+ * @Purpose : to study inversion of control
+ * @description: Create an IOC in Php
+ * @overview:IOC demonstartion
+ * @author : yathin k <yathink3@gmail.com>
+ * @version : 1.0
+ * @since : 19-aug-2019
+ *******************************************************************************************************************/
+
+/**
+ * interface class 
+ */
 interface CharacterInterface
 {
     public function getName(): string;
 }
 
+/**
+ * abstract class ,Character class implements CharacterInterface
+ */
 abstract class Character implements CharacterInterface
 {
     public $name;
@@ -15,6 +31,9 @@ abstract class Character implements CharacterInterface
     }
 }
 
+/**
+ * superhero class extend character
+ */
 class Superhero extends Character
 {
     public $name;
@@ -25,6 +44,9 @@ class Superhero extends Character
     }
 }
 
+/**
+ * vamparicDog extends Character
+ */
 class VampiricDog extends Character
 {
     public $name;
@@ -35,6 +57,9 @@ class VampiricDog extends Character
     }
 }
 
+/**
+ * class comicBook
+ */
 class ComicBook
 {
     public $mainCharacter;

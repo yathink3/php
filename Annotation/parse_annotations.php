@@ -1,4 +1,16 @@
 <?php
+
+/********************************************************************************************************************
+ * @Execution : default node : cmd> parse_annotations.php
+ * @Purpose : to study annotation in php
+ * @description: Create an annotation
+ * @overview:demonstration of annotation
+ * @author : yathin k <yathink3@gmail.com>
+ * @version : 1.0
+ * @since : 19-aug-2019
+ *******************************************************************************************************************/
+
+
 // Composer autoloader - used for autoloading doctrine components
 require_once 'vendor/autoload.php';
 // Contains blueprints of the different annotations types as classes
@@ -10,11 +22,11 @@ require_once 'annotations.php';
 class AnnotationDemo
 {
     /**
-     * @AnnotatedDescription("The property is made private for a subtle reason")
+     * @AnnotatedDescription("The property is made private")
      */
     private $property = "I am a private property!";
     /**
-     * @AnnotatedDescription(desc ="The property is made private for a subtle reason", type="getter")
+     * @AnnotatedDescription(desc ="The property is made private", type="getter")
      */
     public function  getProperty()
     {

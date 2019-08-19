@@ -1,4 +1,16 @@
 <?php
+
+/********************************************************************************************************************
+ * @Execution : default node : cmd> readAll.php
+ * @Purpose : to study apllication programing interface
+ * @description: Create an Rest Api in Php
+ * @overview:api for readAll users in db
+ * @author : yathin k <yathink3@gmail.com>
+ * @version : 1.0
+ * @since : 19-aug-2019
+ *******************************************************************************************************************/
+
+
 // required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -7,12 +19,13 @@ header("Content-Type: application/json; charset=UTF-8");
 include_once '../config/database.php';
 include_once '../objects/user.php';
 
-
+//get the database connection
 $database = new Database();
 $db = $database->getConnection();
 
 // initialize object
 $user = new User($db);
+
 
 $stmt = $user->read();
 $num = $stmt->rowCount();

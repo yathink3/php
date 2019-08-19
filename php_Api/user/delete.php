@@ -1,4 +1,15 @@
 <?php
+
+/********************************************************************************************************************
+ * @Execution : default node : cmd> delete.php
+ * @Purpose : to study apllication programing interface in php
+ * @description: Create an Rest Api in Php
+ * @overview:api for delete
+ * @author : yathin k <yathink3@gmail.com>
+ * @version : 1.0
+ * @since : 19-aug-2019
+ *******************************************************************************************************************/
+
 // required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");

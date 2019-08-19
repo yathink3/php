@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * class Database
+ */
 class Database{
  
     private $host = "localhost";

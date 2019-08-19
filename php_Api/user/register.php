@@ -1,4 +1,16 @@
 <?php
+
+/********************************************************************************************************************
+ * @Execution : default node : cmd> register.php
+ * @Purpose : to study apllication programing interface
+ * @description: Create an Rest Api in Php
+ * @overview:api for register
+ * @author : yathin k <yathink3@gmail.com>
+ * @version : 1.0
+ * @since : 19-aug-2019
+ *******************************************************************************************************************/
+
+
 // required headers
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -12,6 +24,7 @@ include_once '../config/database.php';
 // instantiate user object
 include_once '../objects/user.php';
  
+//get connection
 $database = new Database();
 $db = $database->getConnection();
  
